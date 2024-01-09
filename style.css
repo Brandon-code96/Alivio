@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Georgian:wght@700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    background-color: #FAF6FF;
+}
+.logo{
+    color: #01996D;
+    font-family: Georgia;
+    padding: 13px 0;
+}
+/* Estilo del Menu*/
+nav{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 10px;
+}
+nav > ul{
+    display: flex;
+    justify-content: center;
+    padding: 13px 0;
+}
+nav > ul > li{
+    list-style-type: none;
+    margin:0 20px;
+}
+/* Botones del Menu*/
+.sigIn{
+    border: none;
+    padding: 0 25px;
+}
+.start{
+    padding: 13px 50px;
+    border-radius: 4px;
+    border: 1px solid #01996D;
+    background-color: #01996D;
+    color: #FFF;
+}
