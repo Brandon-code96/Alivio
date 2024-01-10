@@ -7,7 +7,7 @@
 }
 .logo{
     color: #01996D;
-    font-family: Georgia;
+    font-family: Georgia,'Times New Roman', Times, serif;
     padding: 13px 0;
 }
 /* Estilo del Menu*/
@@ -30,10 +30,33 @@ nav > ul > li{
     border: none;
     padding: 0 25px;
 }
-.start{
+.butonStyle{
     padding: 13px 50px;
     border-radius: 4px;
     border: 1px solid #01996D;
     background-color: #01996D;
     color: #FFF;
+}
+
+.portada{
+    background: linear-gradient(113deg, #FFF 18.15%, rgba(255, 255, 255, 0.00) 53.07%), url("/images/Portada.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 8.5em;
+    height: 50vh;
+}
+.portada > h3{
+    color: #01996D;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 3em;
+    font-weight: 700;
+    margin-bottom: 0.7em;
+    background-color: transparent;
+}
+.portada p{
+    color: #484848;
+    font-size: 1.1em;
+    font-weight: 400;
+    margin-bottom: 1.7em;
+    background-color: transparent;
 }
