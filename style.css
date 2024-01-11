@@ -37,7 +37,7 @@ nav > ul > li{
     background-color: #01996D;
     color: #FFF;
 }
-
+/* Portada o cabecera*/
 .portada{
     background: linear-gradient(113deg, #FFF 18.15%, rgba(255, 255, 255, 0.00) 53.07%), url("/images/Portada.png");
     background-size: cover;
@@ -59,4 +59,57 @@ nav > ul > li{
     font-weight: 400;
     margin-bottom: 1.7em;
     background-color: transparent;
+}
+/*Aticulos y/o pasos*/
+article{
+    padding: 10% 10%;
+}
+.guias{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.guias > div > p{
+    color: #424242;
+    font-weight: 600;
+}
+.guias h3{
+    color: #01996D;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 2.5em;
+    font-weight: 700;
+}
+.introduccion{
+    margin: 1em 0 0 2em;
+}
+
+.pasos{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    padding-top: 5em;
+}
+
+.numeros{
+    color: rgba(1, 153, 109, 0.20);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 400;
+    font-size: 5.5em;
+}
+.numeros span{
+    color: #000;
+    font-size: 0.3em;
+    margin-left: -60px;
+    background-color: transparent;
+}
+.pasos div{
+    flex: 1 1 100px;
+}
+.pasos div:nth-child(2){
+    padding-top: 10em;
+}
+.pasos div p:nth-child(2){
+    padding: 5em 2em 5em 0;
+}
+.pasos img{
+    width: 20em;
 }
