@@ -113,3 +113,90 @@ article{
 .pasos img{
     width: 20em;
 }
+
+/* Estilo a la seccion video*/
+.video{
+    background-color: #245852;
+    display: flex;
+    padding: 10em 5em;
+}
+.video h3{
+    color: #FFF;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 2.5em;
+    font-weight: 700;
+    background-color: #245852;
+    justify-content: center;
+    align-items: center;
+}
+.video p{
+    color: #FFF;
+    font-size: 0.7em;
+    font-weight: 600;
+    background-color: #245852;
+    padding: 4em 0 ;
+}
+.video div{
+    background-color: #245852;
+    padding: 7em 0;
+}
+.video img{
+    width: 60%;
+    border-radius: 20px;
+    background-color: #245852;
+}
+
+/* Estilo al cliente*/
+.cliente{
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 5em 15em;
+}
+.producto{
+    margin-left: 15%;
+}
+.producto p:first-child{
+    color: #424242;
+    font-size: 1.5em;
+    font-weight: 600;
+}
+.producto h3{
+    color: #01996D;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 700;
+    font-size: 3em;
+    padding: 1em 0 0.5em 0;
+}
+.producto p:nth-child(3){
+    color: #424242;
+    font-size: 1.3em;
+    font-weight: 600;
+    padding: 0.5em 0 2em 0;
+}
+.imagen img{
+    background: rgba(1, 153, 109, 0.20);
+    border-radius: 2em;
+    position: relative;
+}
+.descripcion{
+    width: 15em;
+    background-color: #FFF;
+    box-shadow: 2px -2px 20px gray;
+    position: absolute;
+    left: 20%;
+    transform: translate(-50%, -75%);
+    line-height: 2em;
+    text-align: center;
+}
+.descripcion ul li{
+    list-style-type: none;
+}
+.descripcion hr{
+    background-color: #000;
+    width: 50%;
+    margin: auto;
+}
+figure img{
+    border-radius: 50%;
+    margin-top: 7px;
+}
