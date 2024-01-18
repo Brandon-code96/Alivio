@@ -200,3 +200,20 @@ figure img{
     border-radius: 50%;
     margin-top: 7px;
 }
+
+/* Footer*/
+footer{
+    padding: 5em 15em;
+    background-color: #245852;
+}
+footer ul li{
+    background-color: #245852;
+    color: #FFF;
+    font-size: 1em;
+    line-height: 3.3em;
+    list-style-type: none;
+}
+footer ul li:first-child{
+    font-size: 2em;
+    font-weight: bold;
+}
