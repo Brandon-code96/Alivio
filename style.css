@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     background-color: #FAF6FF;
+    /* overflow-x: hidden; */
 }
 .logo{
     color: #01996D;
@@ -13,17 +14,24 @@
 /* Estilo del Menu*/
 nav{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    align-items: center;
     margin: 10px;
 }
-nav > ul{
+#menu{
     display: flex;
-    justify-content: center;
-    padding: 13px 0;
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
-nav > ul > li{
-    list-style-type: none;
-    margin:0 20px;
+#menu li{
+    margin-right: 20px;
+}
+
+#menu-icon{
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
 }
 /* Botones del Menu*/
 .sigIn{
@@ -203,7 +211,8 @@ figure img{
 
 /* Footer*/
 footer{
-    padding: 5em 15em;
+    /* padding: 5em 15em; */
+    width: auto;
     background-color: #245852;
 }
 footer ul li{
@@ -216,4 +225,110 @@ footer ul li{
 footer ul li:first-child{
     font-size: 2em;
     font-weight: bold;
+}
+
+
+/* Estilos para dispositivos moviles*/
+@media (max-width: 768px){
+    
+    nav{
+        flex-direction: column;
+        /* align-items: flex-start; */
+    }
+    
+    #menu{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        position: relative;
+        top: 100%;
+        left: 0;
+        padding: 10px 0;
+    }
+    
+    #menu-icon {
+        display: block;
+        align-self: flex-end;
+    }
+    
+    nav div{
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        position: absolute;
+        padding: 10px;
+    }
+    
+    #menu li{
+        margin-right: 0;
+        margin-bottom: 10px;
+        text-align: center;
+        width: 100%;
+    }
+    
+    .logo {
+        align-self: flex-start;
+        margin-bottom: 10px;
+        z-index: 1;
+        
+    }
+    
+    .portada{
+        background-size: contain;
+        margin: auto;
+        padding: 0 0.9rem;
+    }
+    
+    .guias{
+        grid-template-columns: 100%;
+        margin-top: -8rem;
+    }
+
+    .portada h3, .guias h3, .video h3{
+        font-size: 2em;
+    }
+
+    .pasos{
+        flex-direction: column;
+        padding-top: 2rem;
+    }
+
+    .pasos img{
+        box-sizing: border-box;
+    }
+
+    .pasos div{
+        padding: 0;
+        text-align: center;
+    }
+
+    .video{
+        flex-direction: column;
+        padding: 0 1rem;
+        display: block;
+    }
+
+    .video img{
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .cliente{
+        flex-direction: column;
+        margin: 0;
+        padding-top: 5rem;
+    }
+
+    .descripcion{
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    footer{
+        width: 100vw;
+    }
 }
